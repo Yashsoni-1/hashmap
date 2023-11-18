@@ -5,7 +5,10 @@ In this project I have tried to make fast, lightweight and cache friendly c++ ha
 1. Use of modulo operator.
 2. Use of chaining.
 
-(https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/std__unordered_map2.png)
+![Performance of std::unordered_map](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/std__unordered_map2.png)
+
+
+![Performance of std::unordered](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/2.svg)
    
 
 
