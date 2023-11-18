@@ -42,7 +42,7 @@ In this project I have tried to make fast, lightweight and cache friendly c++ ha
 - **Best insertion time of all the maps discussed above.**
 - **At most 2 cache misses before object is found.**
 
-### Choosing load factor
+## Choosing load factor
 
 - This table relies on low load factor for performance.
 - Range is 0.3 - 0.9.
@@ -52,17 +52,19 @@ In this project I have tried to make fast, lightweight and cache friendly c++ ha
 
 > Note: Load factor does not play significant role in Hopscotch hashing.
 
-### Choosing Neighbourhood size
+## Choosing Neighbourhood size
 
 ![Choosing neighbourhood size for lookup graph](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Average%20Lookup%20Time.png)
+
 - Hopscotch hashing is based on Neighbourhood size.
 - Good size can really boost the performance.
 - Poor size can damage the performance.
 - Setting Neighbourhood size equal to size of cache line is what recommended.
 - This will ensure that there is atmost 2 cache misses.
 - I found 24 giving the best performance.
+  
 ![Choosing neighbourhood size for insertion graph](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Average_Insertion_Time%20.png)
 
-### To Do Next
+## To Do Next
 - Make concurrent hashmap.
   
