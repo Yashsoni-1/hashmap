@@ -1,9 +1,10 @@
 # U_MAP
-In this project I have tried to make fast, lightweight and cache friendly c++ hashmap. This project is based on **Malte Skarupke** cppnow talk [link](https://youtu.be/M2fKMP47slQ?si=zQ-g-f-WQBWil0c5) and research paper from MIT [link](https://people.csail.mit.edu/shanir/publications/disc2008_submission_98.pdf). I have used [Hopscotch hashing](https://en.wikipedia.org/wiki/Hopscotch_hashing) with linear probing in this project. This hashmap is almost **5 times** faster than std::unordered_map, both while insertion as well as during lookup with ***O(1)*** worst case time complexity.
+In this project I made c++ hashmap ***u_map*** which is fast, lightweight and cache friendly. This hashmap is almost **5 times** faster than std::unordered_map, both while insertion as well as during lookup with ***O(1)*** worst case time complexity. This project is inspired from **Malte Skarupke** cppnow talk [link](https://youtu.be/M2fKMP47slQ?si=zQ-g-f-WQBWil0c5) and research paper from MIT [link](https://people.csail.mit.edu/shanir/publications/disc2008_submission_98.pdf). I have used ***Hopscotch Hashing*** [link](https://en.wikipedia.org/wiki/Hopscotch_hashing) with linear probing in this project. 
 
 ## Reasons for the std::unordered_map to be slower
 1. Use of modulo operator.
 2. Use of chaining.
+3. ***O(n)*** worst case time complexity.
 
 ![Performance of std::unordered_map](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/std__unordered_map2.png)
 
@@ -42,6 +43,16 @@ In this project I have tried to make fast, lightweight and cache friendly c++ ha
 - **Best insertion time of all the maps discussed above.**
 - **At most 2 cache misses before object is found.**
 
+## Appendix:
+### Expected Runtime Complexity:
+
+![Lemma 1 img](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Screenshot%202023-11-19%20at%203.31.37%20PM.png)
+
+
+
+![Other lemmas img](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Screenshot%202023-11-19%20at%203.33.53%20PM.png)
+
+
 ## Choosing load factor
 
 - This table relies on low load factor for performance.
@@ -65,6 +76,17 @@ In this project I have tried to make fast, lightweight and cache friendly c++ ha
   
 ![Choosing neighbourhood size for insertion graph](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Average_Insertion_Time%20.png)
 
+
+## References
+
+- Article 1 [link](https://medium.com/@michelle.bao1/hopscotch-hashing-2045e7cc176b)
+- Notes On Open Addressing [link](https://jeffe.cs.illinois.edu/teaching/datastructures/2011/notes/knuth-OALP.pdf)
+- MIT Original Research Paper [link](https://people.csail.mit.edu/shanir/publications/disc2008_submission_98.pdf)
+- Hopscotch Hashing [link](https://programming.guide/hopscotch-hashing.html)
+- 
 ## To Do Next
-- Make concurrent hashmap.
+
+- Make Concurrent Hashmap.
+- Make Lock Free.
+- Make Wait Free.
   
