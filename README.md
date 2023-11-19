@@ -53,7 +53,7 @@ In this project I made c++ hashmap ***u_map*** which is fast, lightweight and ca
 ![Other lemmas img](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Screenshot%202023-11-19%20at%203.33.53%20PM.png)
 
 
-## Choosing load factor
+## Choosing Load Factor
 
 - This table relies on low load factor for performance.
 - Range is 0.3 - 0.9.
@@ -63,7 +63,7 @@ In this project I made c++ hashmap ***u_map*** which is fast, lightweight and ca
 
 > Note: Load factor does not play significant role in Hopscotch hashing.
 
-## Choosing Neighbourhood size
+## Choosing Neighbourhood Size
 
 ![Choosing neighbourhood size for lookup graph](https://github.com/Yashsoni-1/u_map/blob/main/Images/graphs/Average%20Lookup%20Time.png)
 
