@@ -89,4 +89,7 @@ In this project I made c++ hashmap ***u_map*** which is fast, lightweight and ca
 - Make Concurrent Hashmap.
 - Make Lock Free.
 - Make Wait Free.
-  
+
+- Designed and implemented a high-performance C++ hashmap that excels in speed, efficiency, and cache-friendliness. Employed Hopscotch Hashing with Linear Probing to optimize the data structure, ensuring swift and reliable key-value pair retrievals.
+
+- Achieved a remarkable 5x improvement in both insertion and lookup speeds while maintaining a worst-case time complexity of O(1).
